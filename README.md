@@ -13,4 +13,5 @@
 ### git status
 ### git pull
 
-![Alt Text](https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiqjuuPs97SAhVI4oMKHQIMBiwQjRwIBw&url=https%3A%2F%2Ftwitter.com%2Flaboratoriacl&psig=AFQjCNHXv5NvYGXCRBWBx-U9qE1RsSzldA&ust=1489869574112464)
+
+Format: ![Alt Text] (https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwidheabtd7SAhWlzIMKHRwFACcQjRwIBw&url=https%3A%2F%2Fgithub.com%2F&psig=AFQjCNEEApEmcqRubCzzEzcLPaLrdU32CQ&ust=1489870185772845)
