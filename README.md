@@ -13,5 +13,4 @@
 ### git status
 ### git pull
 
-
-Format: ![Alt Text] (https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwidheabtd7SAhWlzIMKHRwFACcQjRwIBw&url=https%3A%2F%2Fgithub.com%2F&psig=AFQjCNEEApEmcqRubCzzEzcLPaLrdU32CQ&ust=1489870185772845)
+![GitHub Logo](https://pbs.twimg.com/profile_images/605518775371329537/8s4KKcDQ.png)
