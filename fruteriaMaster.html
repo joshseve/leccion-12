@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> Frutería Master  </title>
+
+    <style>
+        li span {
+            color:#fff;
+            border:1px solid #ccc;
+            background-color:#FBA82C;
+            margin-right:10px;
+            padding: 0 2px;
+            border-radius:4px;
+            -moz-border-radius:4px;
+            -webkit-border-radius:4px;
+            -o-border-radius:4px;
+            border-radius:4px;
+            font-weight:bold;
+            font-size:0.8em;
+            cursor:pointer;
+        }
+    </style>
+
+    <script>
+
+    /**
+     * Funcion que añade un <li> dentro del <ul>
+     */
+    function add_li()
+    {
+        var nuevoLi=document.getElementById("nuevo_li").value;
+        if(nuevoLi.length>0)
+        {
+            if(find_li(nuevoLi))
+            {
+                var li=document.createElement('li');
+                li.id=nuevoLi;
+                li.innerHTML="<span onclick='eliminar(this)'>X</span>"+nuevoLi;
+                document.getElementById("listaDesordenada").appendChild(li);
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Funcion que busca si existe ya el <li> dentrol del <ul>
+     */
+    function find_li(contenido)
+    {
+        var el = document.getElementById("listaDesordenada").getElementsByTagName("li");
+        for (var i=0; i<el.length; i++)
+        {
+            if(el[i].innerHTML==contenido)
+                return false;
+        }
+        return true;
+    }
+
+    /**
+     * Funcion para eliminar los elementos
+     */
+    function eliminar(elemento)
+    {
+        var id=elemento.parentNode.getAttribute("id");
+        node=document.getElementById(id);
+        node.parentNode.removeChild(node);
+    }
+</script>
+
+  </head>
+
+  <body>
+
+    <body BACKGROUND="Fruteria FINAL.jpg">
+
+    <h1>
+      <font face="Verdana" color="120E6F" size="8"> Lista de frutas </font>
+    </h1>
+    <p align="center" style="COLOR: #000000; BACKGROUND-COLOR: #6f90b8">
+      <font face="Tahoma" color="White" size="5">
+        <strong> Frutas Master </strong> es una empresa familiar de tercera generacion que se dedica a la compra,
+        venta y distribución de frutas al por mayor.
+         <br>
+         <br>
+         En la actualidad, somos la empresa líder en el servicio de distribución de frutas.
+      </font>
+    </p>
+
+    <IMG SRC="3994913494_258566f274_z.jpg" width="150" height="100">
+      <br>
+
+      <h1>
+        <p style="COLOR: #000000; BACKGROUND-COLOR: #61CA49">
+          <font align="center" face="Tahoma" color="White" size="4">
+            Escribe a continuación la fruta de tu elección:
+          </font>
+        </p>
+      </h1>
+
+        <p>
+            <form>
+                <input type="text" id="nuevo_li">
+                <br>
+
+                <br>
+                <input type="submit" onclick="return add_li()" value="Agrega mi fruta">
+            </form>
+        </p>
+        <ul id="listaDesordenada">
+        </ul>
+
+  </body>
+
+</html>
